@@ -7748,3 +7748,9 @@ dialog :link{
     display:none;
   }
 }
+
+/* Force hide the buttons that won't go away */
+#outlinesViewMenu, 
+#attachmentsViewMenu {
+    display: none !important;
+}
