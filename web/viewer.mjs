@@ -17942,8 +17942,8 @@ class ViewsManager extends Sidebar {
     this.toggleButton = toggleButton;
     this.resizer = resizer;
     this.thumbnailButton = thumbnailButton;
-    this.outlineButton = outlineButton;
-    this.attachmentsButton = attachmentsButton;
+    // this.outlineButton = outlineButton;
+    // this.attachmentsButton = attachmentsButton;
     this.layersButton = layersButton;
     this.thumbnailsView = thumbnailsView;
     this.outlinesView = outlinesView;
@@ -20483,14 +20483,14 @@ function getViewerConfiguration() {
       sidebarContainer: document.getElementById("viewsManager"),
       resizer: document.getElementById("viewsManagerResizer"),
       thumbnailButton: document.getElementById("thumbnailsViewMenu"),
-      outlineButton: document.getElementById("outlinesViewMenu"),
-      attachmentsButton: document.getElementById("attachmentsViewMenu"),
+      // outlineButton: document.getElementById("outlinesViewMenu"),
+      // attachmentsButton: document.getElementById("attachmentsViewMenu"),
       layersButton: document.getElementById("layersViewMenu"),
       viewsManagerSelectorButton: document.getElementById("viewsManagerSelectorButton"),
       viewsManagerSelectorOptions: document.getElementById("viewsManagerSelectorOptions"),
       thumbnailsView: document.getElementById("thumbnailsView"),
-      outlinesView: document.getElementById("outlinesView"),
-      attachmentsView: document.getElementById("attachmentsView"),
+      // outlinesView: document.getElementById("outlinesView"),
+      // attachmentsView: document.getElementById("attachmentsView"),
       layersView: document.getElementById("layersView"),
       viewsManagerAddFile: {
         button: document.getElementById("viewsManagerAddFileButton"),
