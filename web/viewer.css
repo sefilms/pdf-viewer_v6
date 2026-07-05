@@ -5058,8 +5058,8 @@ button.hasPopupMenu{
   --views-manager-add-file-button-icon:url(images/toolbarButton-zoomIn.svg);
   --current-outline-button-icon:url(images/toolbarButton-currentOutlineItem.svg);
   --menuitem-thumbnailsView-icon:url(images/pages_viewButton.svg);
-  --menuitem-outlinesView-icon:url(images/toolbarButton-viewOutline.svg);
-  --menuitem-attachmentsView-icon:url(images/toolbarButton-viewAttachments.svg);
+  /* --menuitem-outlinesView-icon:url(images/toolbarButton-viewOutline.svg);
+  --menuitem-attachmentsView-icon:url(images/toolbarButton-viewAttachments.svg); */
   --menuitem-layersView-icon:url(images/toolbarButton-viewLayers.svg);
   --manage-button-icon:url(images/toolbarButton-pageDown.svg);
   --close-button-icon:url(images/pages_closeButton.svg);
@@ -5346,14 +5346,14 @@ button.hasPopupMenu{
               -webkit-mask-image:var(--menuitem-thumbnailsView-icon);
                       mask-image:var(--menuitem-thumbnailsView-icon);
             }
-            &#outlinesViewMenu::before{
+            /*&#outlinesViewMenu::before{
               -webkit-mask-image:var(--menuitem-outlinesView-icon);
                       mask-image:var(--menuitem-outlinesView-icon);
             }
             &#attachmentsViewMenu::before{
               -webkit-mask-image:var(--menuitem-attachmentsView-icon);
                       mask-image:var(--menuitem-attachmentsView-icon);
-            }
+            } */
             &#layersViewMenu::before{
               -webkit-mask-image:var(--menuitem-layersView-icon);
                       mask-image:var(--menuitem-layersView-icon);
@@ -5938,7 +5938,7 @@ button.hasPopupMenu{
       }
     }
 
-    #attachmentsView{
+    /*#attachmentsView{
       --attachment-color:light-dark(rgb(0 0 0 / 0.8), rgb(255 255 255 / 0.8));
       --attachment-bg-color:light-dark(
         rgb(0 0 0 / 0.15),
@@ -5981,7 +5981,7 @@ button.hasPopupMenu{
       }
     }
   }
-}
+} */
 
 .sidebar{
   --sidebar-bg-color:light-dark(#fff, #23222b);
@@ -6340,8 +6340,8 @@ button.hasPopupMenu{
   --toolbarButton-download-icon:url(images/toolbarButton-download.svg);
   --toolbarButton-bookmark-icon:url(images/toolbarButton-bookmark.svg);
   --toolbarButton-viewThumbnail-icon:url(images/toolbarButton-viewThumbnail.svg);
-  --toolbarButton-viewOutline-icon:url(images/toolbarButton-viewOutline.svg);
-  --toolbarButton-viewAttachments-icon:url(images/toolbarButton-viewAttachments.svg);
+  /*--toolbarButton-viewOutline-icon:url(images/toolbarButton-viewOutline.svg);
+  --toolbarButton-viewAttachments-icon:url(images/toolbarButton-viewAttachments.svg);*/
   --toolbarButton-viewLayers-icon:url(images/toolbarButton-viewLayers.svg);
   --toolbarButton-currentOutlineItem-icon:url(images/toolbarButton-currentOutlineItem.svg);
   --toolbarButton-search-icon:url(images/toolbarButton-search.svg);
@@ -6554,7 +6554,7 @@ body{
               mask-image:var(--toolbarButton-viewThumbnail-icon);
     }
 
-    #viewOutline::before{
+    /*#viewOutline::before{
       -webkit-mask-image:var(--toolbarButton-viewOutline-icon);
               mask-image:var(--toolbarButton-viewOutline-icon);
       transform:scaleX(var(--dir-factor));
@@ -6563,7 +6563,7 @@ body{
     #viewAttachments::before{
       -webkit-mask-image:var(--toolbarButton-viewAttachments-icon);
               mask-image:var(--toolbarButton-viewAttachments-icon);
-    }
+    }*/
 
     #viewLayers::before{
       -webkit-mask-image:var(--toolbarButton-viewLayers-icon);
@@ -7747,10 +7747,4 @@ dialog :link{
   #scaleSelectContainer{
     display:none;
   }
-}
-
-/* Force hide the buttons that won't go away */
-#outlinesViewMenu, 
-#attachmentsViewMenu {
-    display: none !important;
 }
